@@ -2,10 +2,16 @@
 
 module.exports = {
 
-  development: {
-    client: 'pg',
-    connection: 'postgres://localhost/emailserver',
-  },
+    development: {
+      client: 'pg',
+      connection: {
+        host: 'localhost',
+        database: 'emailserver',
+        user: 'Brian',
+        password: '123',
+        port: '4000'
+      }
+    },
 
   staging: {
     client: 'postgresql',

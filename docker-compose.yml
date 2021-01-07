@@ -1,0 +1,14 @@
+version: '3'
+services:
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_PASSWORD: "123"
+      POSTGRES_USER: Brian
+    ports:
+      - "4000:5432"
+  
+  my_app:
+    build: .
+    ports:
+      - 3002:3000

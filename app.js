@@ -3,7 +3,7 @@ const bodyParser = require("body-parser")
 
 const express = require('express')
 const app = express()
-const port = 3001
+const port = 3005
 const knex = require('knex')(require('./knexfile.js')['development']);
 
 
